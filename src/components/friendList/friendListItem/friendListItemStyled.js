@@ -18,7 +18,7 @@ export const FriendlistNav = styled.li`
      width: 15px;
      height: 15px;
      background-color:${(props) =>
-    props.status ? "green" : "red"}
+     props.status ? "green" : "red"}
   }
   
 `;

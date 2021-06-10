@@ -1,0 +1,30 @@
+ 
+.container {
+  background-color: rgb(134, 133, 125);
+  padding: 30px;
+}
+
+.table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+.th {
+  background: #bcebdd;
+  color: white;
+  padding: 10px 20px;
+}
+
+.tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+.tr .td:last-child {
+  border-right: none;
+}

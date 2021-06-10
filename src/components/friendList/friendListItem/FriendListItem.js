@@ -1,12 +1,10 @@
 import React from 'react';
-import FriendList from "./FriendListItem"
 import { FriendlistNav } from './friendListItemStyled';
-
+import PropTypes from "prop-types";
 
 const FriendListItem = ({friend}) => {
     return (
       <FriendlistNav status={ friend.isOnline}>
-        {/* <li className="item"> */}
           <span className="status" />    
           <img
             className="avatar"
@@ -15,10 +13,19 @@ const FriendListItem = ({friend}) => {
             width="48"
           />
           <p className="name">{friend.name}</p>
-        {/* </li> */}
+    
         
       </FriendlistNav>
     );
+};
+
+FriendListItem.propTypes = {
+  friend: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }),
 };
 
 export default FriendListItem;
