@@ -1,5 +1,5 @@
 import React from 'react';
-import { FriendlistNav } from './friendListItemStyled';
+import { FriendlistNav } from './FriendListItemStyled';
 import PropTypes from "prop-types";
 
 const FriendListItem = ({friend}) => {
@@ -13,8 +13,6 @@ const FriendListItem = ({friend}) => {
             width="48"
           />
           <p className="name">{friend.name}</p>
-    
-        
       </FriendlistNav>
     );
 };

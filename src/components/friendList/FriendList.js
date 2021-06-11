@@ -1,16 +1,16 @@
 import React from 'react';
 import FriendListItem from './friendListItem/FriendListItem';
-import { FriendlistNav } from './friendListItem/friendListItemStyled';
 import PropTypes from "prop-types";
+import { FriendlistUl } from './FriendListStyled';
 
 
 const FriendList = ({ friends }) => {
     return (
-        <FriendlistNav>
+        <FriendlistUl>
             {friends.map(friend => {
                 return (<FriendListItem friend={friend} key={friend.id} />)
             })}
-        </FriendlistNav>
+        </FriendlistUl>
         
     );
 };
